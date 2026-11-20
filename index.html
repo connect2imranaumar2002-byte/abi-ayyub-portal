@@ -47,6 +47,7 @@ main{padding:clamp(16px,2.4vw,34px)}
 #applicationsList{font-size:15px;line-height:1.8}#applicationsList details>div{font-size:15px!important;line-height:1.9!important;background:#fff;padding:14px;border-radius:12px;margin-top:8px;color:#26362e}.application-card{font-size:16px;line-height:1.8}.media-select{position:absolute;top:8px;left:8px;z-index:2;width:22px;height:22px}.media-card{position:relative}.dark-mode{--bg:#101916;--ink:#edf4ef;--line:#34453c;--white:#1b2922;--muted:#b4c1b8;background:#101916!important;color:#edf4ef}.dark-mode .panel,.dark-mode .post,.dark-mode .media-card,.dark-mode .staff,.dark-mode .sidebar,.dark-mode .empty{background:#1b2922;color:#edf4ef;border-color:#34453c}.dark-mode .side-foot,.dark-mode .admin-box,.dark-mode #studentPortal{background:#22332a!important;color:#edf4ef}.dark-mode input,.dark-mode textarea,.dark-mode select{background:#17231d;color:#edf4ef;border-color:#43564a}.dark-mode .navbtn{color:#dbe8df}.dark-mode .navbtn.active{background:#294337;color:#fff}.dark-mode .small,.dark-mode .page-head p{color:#bdc9c0}
 
 </style>
+ <meta name="monetag" content="92ca52b98fb932af014e92f3021ac17f">
 </head>
 <body>
 <section id="authScreen" class="auth-screen">
@@ -77,12 +78,12 @@ main{padding:clamp(16px,2.4vw,34px)}
  <div class="layout">
   <aside class="sidebar" id="sidebar">
    <div class="side-title" data-i18n="menu">MENU</div>
-   <button class="navbtn active" data-page="dashboard"><span class="ico">▦</span><span data-i18n="dashboard">Dashboard</span></button>
-   <button class="navbtn" data-page="screening"><span class="ico">📝</span><span data-i18n="screening">Screening / Rajista</span></button>
+   <button class="navbtn active" data-page="dashboard"><span class="ico">📺</span><span data-i18n="dashboard">Dashboard</span></button>
+   <button class="navbtn" data-page="screening"><span class="ico">⌨️</span><span data-i18n="screening">Screening / Rajista</span></button>
    <button class="navbtn hidden" id="adminAttachmentNav" data-page="admin-attachment"><span class="ico">📎</span><span>Admin Attachment</span></button>
-   <button class="navbtn" data-page="teachers"><span class="ico">🧑‍🏫</span><span data-i18n="teachers">Bayanan Malamai</span></button>
+   <button class="navbtn" data-page="teachers"><span class="ico">🧑‍🎓</span><span data-i18n="teachers">Bayanan Malamai</span></button>
    <button class="navbtn" data-page="media"><span class="ico">▣</span><span data-i18n="media">Media ta Makaranta</span></button>
-   <button class="navbtn" data-page="live"><span class="ico">🔴</span><span>Live Video</span></button>
+   <button class="navbtn" data-page="live"><span class="ico">🎬</span><span>Live Video</span></button>
    <button class="navbtn" data-page="account"><span class="ico">◉</span><span data-i18n="account">Asusu</span></button>
    <div class="side-foot"><b>Abi Ayyubal Ansari Smart School</b><br><span data-i18n="portalNote">Dandalin makaranta na hukuma.</span></div>
   </aside>
@@ -90,9 +91,9 @@ main{padding:clamp(16px,2.4vw,34px)}
    <section id="page-dashboard" class="page">
     <div class="welcome"><div class="eyebrow" data-i18n="welcome">BARKA DA ZUWA MAKARANTARMU</div><p class="arabic" dir="rtl">مدرسة أبي أيوب الأنصاري لتحفيظ القرآن</p><h1>Abi Ayyubal Ansari<br><span style="color:#e5c77e">ABI AYYUB PORTAL</span></h1><p data-i18n="welcomeDesc">Dandalin makaranta domin rajistar ɗalibai, sanarwa, malamai da hotuna ko bidiyo.</p></div>
     <div class="cards">
-     <div class="panel metric"><div class="metric-icon">🎓</div><div><strong id="studentCount">—</strong><span data-i18n="screeningCount">Rajistar ɗalibai</span></div></div>
-     <div class="panel metric"><div class="metric-icon">📢</div><div><strong id="postCount">—</strong><span data-i18n="announcements">Sanarwa</span></div></div>
-     <div class="panel metric"><div class="metric-icon">🖼️</div><div><strong id="mediaCount">—</strong><span data-i18n="mediaItems">Hotuna da sauti</span></div></div>
+     <div class="panel metric"><div class="metric-icon">🧑‍🎓</div><div><strong id="studentCount">—</strong><span data-i18n="screeningCount">Rajistar ɗalibai</span></div></div>
+     <div class="panel metric"><div class="metric-icon">📱</div><div><strong id="postCount">—</strong><span data-i18n="announcements">Sanarwa</span></div></div>
+     <div class="panel metric"><div class="metric-icon">📹</div><div><strong id="mediaCount">—</strong><span data-i18n="mediaItems">Hotuna da sauti</span></div></div>
     </div>
     <div class="content-grid" style="margin-top:17px">
      <section><div class="page-head"><div><h2 data-i18n="schoolUpdates">Sanarwa da wallafe-wallafe</h2><p data-i18n="updatesHint">Sabbin bayanan da makaranta ta wallafa.</p></div></div><div id="postsList"><div class="empty" data-i18n="loading">Ana lodawa...</div></div></section>
@@ -102,7 +103,7 @@ main{padding:clamp(16px,2.4vw,34px)}
      </aside>
     </div>
     <section class="panel" style="margin-top:18px" id="schoolLocation">
-     <div class="page-head"><div><h2>📍 Wurin Makaranta</h2><p><b>MADRASATU ABU AYYUB AL ANSARI</b> — GCH4+6Q5, Ungwan Sanusi, Badiko, Kaduna. Bayan Masallacin Matasa, a wuce gaba kaɗan ta kudu; makarantar tana gefen hagu, gida na biyu.</p></div></div>
+     <div class="page-head"><div><h2>📱 Wurin Makaranta</h2><p><b>MADRASATU ABU AYYUB AL ANSARI</b> — GCH4+6Q5, Ungwan Sanusi, Badiko, Kaduna. Bayan Masallacin Matasa, a wuce gaba kaɗan ta kudu; makarantar tana gefen hagu, gida na biyu.</p></div></div>
      <div style="width:100%;height:360px;border-radius:14px;overflow:hidden;background:#eaf0eb"><iframe title="Taswirar MADRASATU ABU AYYUB AL ANSARI" width="100%" height="100%" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://www.google.com/maps?q=GCH4%2B6Q5%20MADRASATU%20ABU%20AYYUB%20AL%20ANSARI%2C%20Ungwan%20Sanusi%2C%20Badiko%20800282%2C%20Kaduna&output=embed"></iframe></div>
      <p class="small" style="margin-top:10px">Taswirar tana nuna alamar makarantar daga sabon location pin ɗin da aka turo.</p>
      <a class="btn" style="display:inline-block;text-decoration:none;margin-top:6px" href="google.navigation:q=GCH4%2B6Q5%20MADRASATU%20ABU%20AYYUB%20AL%20ANSARI%2C%20Ungwan%20Sanusi%2C%20Badiko%2C%20Kaduna">🧭 Buɗe hanya a Google Maps App</a>
@@ -144,9 +145,9 @@ main{padding:clamp(16px,2.4vw,34px)}
    </section>
 
    <section id="page-admin-attachment" class="page hidden">
-    <div class="page-head"><div><h2>📎 Admin Attachment</h2><p>Review student applications and publish urgent school announcements.</p></div></div>
+    <div class="page-head"><div><h2>🖥️ Admin Attachment</h2><p>Review student applications and publish urgent school announcements.</p></div></div>
     <div id="adminApplications" class="panel admin-box hidden"><h3 data-i18n="adminApplications">Rajistocin da aka nema (Admin)</h3><div id="applicationsList" class="small">Loading applications...</div></div>
-    <div class="panel admin-box" style="margin-top:15px"><h3>📢 Send urgent announcement</h3><form id="urgentPostForm"><div class="field"><label for="urgentPostTitle">Announcement title</label><input id="urgentPostTitle" maxlength="120" required></div><div class="field"><label for="urgentPostBody">Message</label><textarea id="urgentPostBody" rows="4" maxlength="5000" required></textarea></div><button class="btn" type="submit">Publish announcement</button><div id="urgentPostStatus" class="status"></div></form></div>
+    <div class="panel admin-box" style="margin-top:15px"><h3>📱 Send urgent announcement</h3><form id="urgentPostForm"><div class="field"><label for="urgentPostTitle">Announcement title</label><input id="urgentPostTitle" maxlength="120" required></div><div class="field"><label for="urgentPostBody">Message</label><textarea id="urgentPostBody" rows="4" maxlength="5000" required></textarea></div><button class="btn" type="submit">Publish announcement</button><div id="urgentPostStatus" class="status"></div></form></div>
    </section>
 
    <section id="page-teachers" class="page hidden">
@@ -176,14 +177,14 @@ main{padding:clamp(16px,2.4vw,34px)}
    </section>
 
    <section id="page-live" class="page hidden">
-    <div class="page-head"><div><h2>🔴 School Live Video</h2><p>Watch the school’s live lesson or announcement here.</p></div></div>
+    <div class="page-head"><div><h2>🎬 School Live Video</h2><p>Watch the school’s live lesson or announcement here.</p></div></div>
     <div class="panel">
      <div id="liveStatus" class="status">No live stream is active right now.</div><button type="button" class="action hidden" id="copyLiveLinkBtn" style="margin:8px 0">🔗 Copy current Live link</button>
      <h3 id="liveTitle" style="margin:10px 0">Abi Ayyubal Ansari Smart School Live</h3>
      <div id="livePlayerWrap" class="hidden" style="position:relative;width:100%;aspect-ratio:16/9;background:#101915;border-radius:14px;overflow:hidden"><iframe id="livePlayer" title="School live video" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>
      <p class="small" id="liveFallback">When the school starts a live broadcast, it will appear here. Facebook controls which live comments and reactions can be embedded.</p>
     </div>
-    <div class="panel" style="margin-top:15px"><h3>🎞️ Live Videos & Recordings</h3><p class="small">Previous school broadcasts saved by the Admin will remain available here for replay.</p><div id="liveArchiveList" class="media-grid"><div class="empty">No saved recordings yet.</div></div></div>
+    <div class="panel" style="margin-top:15px"><h3>💻 Live Videos & Recordings</h3><p class="small">Previous school broadcasts saved by the Admin will remain available here for replay.</p><div id="liveArchiveList" class="media-grid"><div class="empty">No saved recordings yet.</div></div></div>
     <div id="adminLiveBox" class="panel admin-box hidden" style="margin-top:15px">
      <h3>⚙️ Admin Live Control</h3>
      <p class="small">Start Facebook Live from your school Page or profile, make the broadcast Public, then paste its Facebook Live/video link below. The portal will try to embed it; The portal will display the embedded stream when Facebook allows embedding.</p>
